@@ -47,3 +47,127 @@
   vertical-align: middle;
   opacity: 0.7;
 }
+
+.ksv-navbar-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.ksv-navbar-active {
+  color: #C8973A !important;
+  border-bottom: 2px solid #C8973A;
+}
+
+/* ── Mega Menu ── */
+.ksv-megamenu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #DDE3EE;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  padding: 2rem;
+  min-width: 680px;
+  z-index: 2000;
+  animation: megamenu-in 0.18s ease;
+}
+
+@keyframes megamenu-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.ksv-megamenu-desc {
+  flex: 1.4;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ksv-megamenu-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1A3A6B;
+  margin: 0 0 0.4rem 0;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.ksv-megamenu-text {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 0.8rem 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.ksv-megamenu-cta {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #C8973A !important;
+  text-decoration: none !important;
+  letter-spacing: 0.01em;
+  font-family: 'Poppins', system-ui, sans-serif;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ksv-megamenu-cta:hover {
+  text-decoration: underline !important;
+}
+
+.ksv-megamenu-divider {
+  width: 1px;
+  background: #DDE3EE;
+  margin: 0 2rem;
+  flex-shrink: 0;
+}
+
+.ksv-megamenu-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ksv-megamenu-col-heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin: 0 0 0.75rem 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.ksv-megamenu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.ksv-megamenu-links li a {
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #374151 !important;
+  text-decoration: none !important;
+  padding: 0.35rem 0;
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: color 0.15s;
+}
+
+.ksv-megamenu-links li a:hover {
+  color: #1A3A6B !important;
+}

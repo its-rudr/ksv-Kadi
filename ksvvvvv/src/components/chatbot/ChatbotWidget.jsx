@@ -1,4 +1,4 @@
-// Merge conflict marker removed
+// Merge conflict resolved: kept local version
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
@@ -153,4 +153,7 @@ export default function ChatbotWidget() {
     </div>
   );
 }
+<<<<<<< HEAD
 // End of file
+=======
+>>>>>>> 37bf45f3d486531e4c766e71a1b278c3ee44d010
