@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
@@ -152,3 +153,5 @@ export default function ChatbotWidget() {
     </div>
   );
 }
+=======
+>>>>>>> Stashed changes

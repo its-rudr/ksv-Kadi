@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import SDGSection from "../components/sdg";
+
 export default function Sustainability() {
-  return <div className="p-8"><h1>Sustainability</h1></div>;
+  return <SDGSection />;
 }
