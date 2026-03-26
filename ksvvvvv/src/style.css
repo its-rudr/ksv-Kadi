@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap');
+
+@theme {
+  /* ── Brand colours ── */
+  --color-ksv-primary:   #1A3A6B;
+  --color-ksv-secondary: #C8973A;
+  --color-ksv-dark:      #0D1B2A;
+  --color-ksv-light:     #F8F9FC;
+  --color-ksv-white:     #FFFFFF;
+  --color-ksv-border:    #DDE3EE;
+
+  /* ── Typography ── */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-heading: "Poppins", system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, sans-serif;
+  --font-data:    "Space Grotesk", system-ui, sans-serif;
+  --font-motto:   "Noto Serif Devanagari", serif;
+
+  /* ── Shadows ── */
+  --shadow-card:  0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.15);
+
+  /* ── Border radius ── */
+  --radius-radius-sm:   6px;
+  --radius-radius-md:  12px;
+  --radius-radius-lg:  20px;
+  --radius-radius-pill: 999px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #ffffff;
+  color: #0D1B2A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+p { margin: 0; }
+img { max-width: 100%; height: auto; }
