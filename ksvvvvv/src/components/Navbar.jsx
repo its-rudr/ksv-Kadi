@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -13,7 +14,9 @@ export default function Navbar() {
           Admission <span className="ksv-navbar-arrow">&#9662;</span>
         </li>
         <li className="ksv-navbar-item">
-          Cells <span className="ksv-navbar-arrow">&#9662;</span>
+          <Link to="/cells-centers" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+            Cells & Centres
+          </Link>
         </li>
         <li className="ksv-navbar-item">
           Research <span className="ksv-navbar-arrow">&#9662;</span>
