@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -60,18 +59,24 @@ export default function Navbar() {
             Cells & Centres
           </Link>
         </li>
+        <li className="ksv-navbar-item">
+          <Link to="/research">Research <span className="ksv-navbar-arrow">&#9662;</span></Link>
+          {openMenu === 'research' && (
+            <div
+              className="ksv-megamenu-wrapper"
+              onMouseEnter={() => open('research')}
+              onMouseLeave={close}
+            >
               <ResearchMegaMenu />
             </div>
           )}
         </li>
-
         <li className="ksv-navbar-item">
           <Link to="/about">
             <div style={{display:'flex',flexDirection:'column',alignItems:'center',lineHeight:'1.1'}}>
               <span>Our</span>
               <span>Institute <span className="ksv-navbar-arrow">&#9662;</span></span>
             </div>
->>>>>>> 37bf45f3d486531e4c766e71a1b278c3ee44d010
           </Link>
         </li>
         <li className="ksv-navbar-item">
