@@ -1,10 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function App() {
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -13,6 +6,7 @@ import About from './pages/About';
 import Courses from './pages/Courses';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
+import './App.css';
 
 function App() {
   return (
@@ -32,6 +26,3 @@ function App() {
 }
 
 export default App;
-}
-
-export default App
