@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "installCommand": "cd ksvvvvv && npm ci",
+  "buildCommand": "cd ksvvvvv && npm run build",
+  "outputDirectory": "ksvvvvv/dist"
+}
