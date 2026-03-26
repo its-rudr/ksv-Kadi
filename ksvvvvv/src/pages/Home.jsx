@@ -1,10 +1,10 @@
 import React from 'react';
+import HeroSlider from '../components/home/HeroSlider';
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to KSV University</h1>
-      <p>This is the homepage. Replace this with your university introduction and highlights.</p>
+      <HeroSlider />
     </div>
   );
 }
