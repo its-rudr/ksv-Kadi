@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
@@ -152,6 +153,9 @@ export default function ChatbotWidget() {
   </div>
   );
 }
+=======
+// Merge conflict resolved: kept local version
+>>>>>>> 9143fb013bbdc5f544b0cfeabb8aede0a27c8be8
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send } from 'lucide-react';
@@ -306,4 +310,11 @@ export default function ChatbotWidget() {
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+// End of file
+=======
+>>>>>>> 37bf45f3d486531e4c766e71a1b278c3ee44d010
+>>>>>>> 9143fb013bbdc5f544b0cfeabb8aede0a27c8be8

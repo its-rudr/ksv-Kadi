@@ -7,4 +7,7 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
+  server: {
+    allowedHosts: ['authentic-carolin-presurgical.ngrok-free.dev']
+  }
 })
