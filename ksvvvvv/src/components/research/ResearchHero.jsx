@@ -1,11 +1,10 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight, Home, Users, BookOpen, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ResearchHero() {
   return (
-    <div className="relative pt-40 md:pt-48 pb-20 w-full bg-ksv-primary overflow-hidden min-h-[500px] flex items-center">
+    <div className="relative pt-24 pb-20 w-full bg-ksv-primary overflow-hidden min-h-125 flex items-center">
       {/* Background Graphic */}
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -17,10 +16,10 @@ export default function ResearchHero() {
           <rect width="100%" height="100%" fill="url(#research-grid)" />
         </svg>
       </div>
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-ksv-secondary/20 rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4"></div>
+      <div className="absolute top-0 right-0 w-200 h-200 bg-ksv-secondary/20 rounded-full blur-[120px] translate-x-1/4 -translate-y-1/4"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
         
         <motion.div 
           initial={{ opacity: 0 }}
